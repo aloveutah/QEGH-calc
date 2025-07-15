@@ -1,0 +1,67 @@
+Python 3.13.3 (v3.13.3:6280bb54784, Apr  8 2025, 10:47:54) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Enter "help" below or click "Help" above for more information.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Wallet Calculator</h1>
+    <label for="fx_rate">Select FX Rate:</label>
+    <select id="fx_rate">
+        <option value="0.272294078">AED</option>
+        <option value="0.649546085">AUD</option>
+        <option value="0.179176337">BRL</option>
+        <option value="0.730710167">CAD</option>
+...         <option value="1.218293492">CHF</option>
+...         <option value="0.139169542">CNY</option>
+...         <option value="0.046033733">CZK</option>
+...         <option value="0.153032385">DKK</option>
+...         <option value="1.141494614">EUR</option>
+...         <option value="1.354462257">GBP</option>
+...         <option value="0.127449968">HKD</option>
+...         <option value="0.151502371">HRK</option>
+...         <option value="0.285935229">ILS</option>
+...         <option value="0.011653432">INR</option>
+...         <option value="0.006937525">JPY</option>
+...         <option value="0.052257812">MXN</option>
+...         <option value="0.236281449">MYR</option>
+...         <option value="0.098992719">NOK</option>
+...         <option value="0.60236927">NZD</option>
+...         <option value="0.017931503">PHP</option>
+...         <option value="0.266465143">PLN</option>
+...         <option value="0.226211197">RON</option>
+...         <option value="0.009738203">RSD</option>
+...         <option value="0.266666667">SAR</option>
+...         <option value="0.104010913">SEK</option>
+...         <option value="0.776519484">SGD</option>
+...         <option value="0.030600492">THB</option>
+...         <option value="0.025475516">TRY</option>
+...         <option value="1">USD</option>
+...         <option value="0.056255668">ZAR</option>
+...     </select><br><br>
+... 
+...     <label for="wallet_amount">Wallet Amount:</label>
+...     <input type="number" id="wallet_amount" /><br><br>
+... 
+...     <label for="premiums">Premiums:</label>
+...     <input type="number" id="premiums" /><br><br>
+... 
+...     <label for="grant_price">Grant Price:</label>
+...     <input type="number" id="grant_price" /><br><br>
+... 
+...     <button id="calculateBtn">Calculate</button>
+... 
+...     <div class="result" id="result" style="display: none;">
+        <h2>Results:</h2>
+        <p id="total_usd"></p>
+        <p id="wallet_per_quarter"></p>
+        <p id="shares_quantity"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
