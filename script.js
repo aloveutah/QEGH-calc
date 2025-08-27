@@ -16,7 +16,7 @@ document.getElementById('calculate').addEventListener('click', function() {
     // Days Worked calculation
     const daysWorked = Math.max(0, (endDate - startDate) / (1000 * 60 * 60 * 24));
 
-    // Days Worked Value calculation
+    // Days Worked times Per Day Value
     const daysWorkedValue = (daysWorked * perDayValue).toFixed(6);
 
     // Total Shares calculation
@@ -27,9 +27,9 @@ document.getElementById('calculate').addEventListener('click', function() {
 
     // Display results
     const results = `
-        <p>Per Day Value: $${perDayValue}</p>
+        <p>Wallet Amount / 366 Days: ${walletAmount} / 366 = ${perDayValue}</p>
         <p>Days Worked: ${daysWorked}</p>
-        <p>Days Worked Value: $${daysWorkedValue}</p>
+        <p>Days Worked * Per Day Value: ${daysWorked} * ${perDayValue} = ${daysWorkedValue}</p>
         <p>Total Shares: ${totalShares}</p>
         <p>Shares Rounded Up: ${sharesRoundedUp}</p>
     `;
